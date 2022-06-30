@@ -47,8 +47,5 @@
         "rollup-plugin-typescript2": "^0.25.3",
         "ts-jest": "^26.4.0",
         "typescript": "^2.8.3"
-    },
-    "files": [
-        "build"
-    ]
+    }
 }
