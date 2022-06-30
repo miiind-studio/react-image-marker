@@ -11,7 +11,7 @@
         "build": "rollup -c",
         "postbuild": "find build -name *.test.d.ts -exec rm -if {} \\; && rm -r build/utils",
         "start": "rollup -c -w",
-        "postinstall": "npm run build"
+        "postinstall": "npm install && npm run build"
     },
     "repository": {
         "type": "git",
