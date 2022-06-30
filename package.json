@@ -10,7 +10,6 @@
         "prebuild": "rm -rf build",
         "build": "rollup -c",
         "postbuild": "find build -name *.test.d.ts -exec rm -if {} \\; && rm -r build/utils",
-        "postinstall": "npm run build",
         "start": "rollup -c -w"
     },
     "repository": {
