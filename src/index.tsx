@@ -7,11 +7,13 @@ const DEFAULT_BUFFER = 12;
 export type Marker = {
     top: Number;
     left: Number;
+    id: Number;
 };
 export type MarkerComponentProps = {
     top: Number;
     left: Number;
     itemNumber: Number;
+    id: Number;
 };
 
 type Props = {
@@ -52,6 +54,7 @@ const ImageMarker: React.FC<Props> = ({
         onAddMarker({
             top,
             left,
+            id:Date.now()
         });
     };
 
@@ -77,7 +80,7 @@ const ImageMarker: React.FC<Props> = ({
                         !MarkerComponent && 'image-marker__marker--default'
                     }`}
                     style={getItemPosition(marker)}
-                    key={itemNumber}
+                    key={makrer.id}
                     data-testid="marker"
                 >
                     {MarkerComponent ? (
