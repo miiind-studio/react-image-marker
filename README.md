@@ -23,7 +23,7 @@
   </a>
 </p>
 
-`react-image-marker` makes it easy to add markers and tags to any image.
+`react-image-marker` (fork) makes it easy to add markers and tags to any image.
 
 ## Why ?
 
