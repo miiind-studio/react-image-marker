@@ -19,10 +19,12 @@ describe('ImageMarker', () => {
             {
                 top: 10,
                 left: 30,
+                id: Date.now()
             },
             {
                 top: 40,
                 left: 50,
+                id: Date.now()
             },
         ];
         const { queryAllByTestId } = render(
@@ -54,6 +56,7 @@ describe('ImageMarker', () => {
             {
                 top: 10,
                 left: 30,
+                id: Date.now()
             },
         ];
 
